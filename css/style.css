@@ -1,0 +1,41 @@
+ .tresc {
+  height: 100%;
+  min-height: 649px;
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 30px;
+  vertical-align: middle;
+  color: inherit;
+  background-color: #eeeeee;
+  background-image: url('../img/blured.jpg');
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.tresc h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.tresc li {
+  line-height: 30px;
+}
+.zdjecie img{
+	margin-bottom: 10px;
+	border-style: ridge;
+	border-width: 3px;
+	border-color: silver;
+	border-radius: 8px;
+}
+.wieksze{
+  font-size: 20px;
+  line-height: 3;
+  letter-spacing: -1px;
+  color: inherit;
+}

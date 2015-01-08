@@ -1,0 +1,4 @@
+name: Jakpok
+markdown: redcarpet
+pygments: true
+permalink: /:title.html
