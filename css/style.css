@@ -1,4 +1,22 @@
- .tresc {
+ @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+*{
+	font-family: Lato, Verdana, sans-serif;
+}
+
+.headerTitle{
+	font-size: 62px;
+	font-weight: 800;
+	line-height: 72px;
+	text-transform: uppercase;
+}
+
+ .content {
   height: 100%;
   min-height: 649px;
   padding: 60px;
@@ -15,7 +33,7 @@
           border-radius: 6px;
 }
 
-.tresc h1 {
+.content h1 {
   margin-bottom: 0;
   font-size: 40px;
   line-height: 1;
@@ -23,7 +41,7 @@
   color: inherit;
 }
 
-.tresc li {
+.content li {
   line-height: 30px;
 }
 .zdjecie img{
@@ -33,7 +51,7 @@
 	border-color: silver;
 	border-radius: 8px;
 }
-.wieksze{
+.bigger{
   font-size: 20px;
   line-height: 3;
   letter-spacing: -1px;
