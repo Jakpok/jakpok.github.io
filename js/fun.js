@@ -4,5 +4,5 @@ function rotate(){
 	if(r==-270){
 		r=0;
 	}
-	document.body.setAttribute( "style", "-moz-transform: rotate(" + r + "deg);");
+	document.body.setAttribute( "style", "-webkit-transform: rotate(" + r + "deg);-moz-transform: rotate(" + r + "deg);-o-transform: rotate(" + r + "deg);transform: rotate(" + r + "deg);");
 }
