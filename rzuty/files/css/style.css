@@ -1,0 +1,46 @@
+.content{
+	margin: 20px;
+	margin-bottom: 60px;
+}
+
+.tag{
+	/*color: rgba(0, 0, 0, 0.5);*/
+	background-color: rgba(255,255,255,0.4);
+	font-weight: bold;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+}
+
+p{
+  margin-top: 10px;
+}
+
+canvas{
+  margin-top: 50px;
+  border:1px solid #d3d3d3;
+}
+
+table{
+	margin-top: 20px;
+}
+
+.input-group{
+	margin-top: 10px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}

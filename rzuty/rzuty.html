@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<title>Rzuty</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="files/css/style.css">
+	<link rel="stylesheet" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+	<script src="files/js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#rzut1">Rzut poziomy</a></li>
+				<li><a data-toggle="tab" href="#rzut2">Rzut ukośny</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="rzut1" class="tab-pane fade in active">
+					<!-- RZUT POZIOMY -->
+					<h3>Rzut poziomy</h3>
+					<div class="alert alert-warning" style="display: none"> 
+						<a class="close" onclick="$('.alert').hide()">x</a>  
+						<strong>Błąd!</strong> Podane wartości nie są liczbami!
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">Wysokość (H)</span>
+						<input id="pozH" type="text" class="form-control" placeholder="H">
+						<span class="input-group-addon">[m]</span>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">Prędkość początkowa (V)</span>
+						<input id="pozV" type="text" class="form-control" placeholder="V">
+						<span class="input-group-addon">[m/s]</span>
+					</div>
+					<p>
+						<button type="submit" class="btn btn-primary btn-lg" onclick="rzutPoziomy()">Oblicz</button>
+					</p>
+					<br><hr>
+					
+					<!-- WYKRES -->
+					<div id="box" class="jxgbox" style="width:800px; height:400px;"></div>
+					<script src="files/js/horizontalGraphManager.js"></script>
+					
+					<p>Aby utworzyć punkt pomiarowy należy kliknąć na wykres. Aby usunąć punkt należy kliknąć ponownie na dany punkt&nbsp;&nbsp;&nbsp;
+					<button type="submit" class="btn btn-primary" onclick="animatePoint()">Animacja</button>
+					</p>
+					
+					
+					<table class="table table-bordered">
+					  <tr>
+						<td>Zasięg rzutu:</td>
+						<td class="active" id="zasieg">0 [m]</td>
+					  </tr>
+					  <tr>
+						<td>Czas do momentu upadku:</td>
+						<td class="active" id="t_upadku">0 [s]</td>		
+					  </tr>
+					  <tr>
+						<td>Prędkość w momencie upadku:</td>
+						<td class="active" id="v_upadku">0 [m/s]</td>		
+					  </tr>
+					</table>
+					<!-- KONIEC RZUTU POZIOMEGO -->
+				</div>
+				
+				
+				<div id="rzut2" class="tab-pane fade">
+					<!-- RZUT UKOSNY -->
+					<h3>Rzut ukośny</h3>
+					<div class="alert alert-warning" style="display: none"> 
+						<a class="close" onclick="$('.alert').hide()">x</a>  
+						<strong>Błąd!</strong> Podane wartości nie są liczbami!
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">Kąt (a)</span>
+						<input id="alfa" type="text" class="form-control" placeholder="a">
+						<span class="input-group-addon">[°]</span>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">Prędkość początkowa (V)</span>
+						<input id="ukoV" type="text" class="form-control" placeholder="V">
+						<span class="input-group-addon">[m/s]</span>
+					</div>
+					<p>
+						<button type="submit" class="btn btn-primary btn-lg" onclick="rzutUkosny()">Oblicz</button>
+					</p>
+					<br><hr>
+					
+					<!-- WYKRES -->
+					<div id="box2" class="jxgbox" style="width:800px; height:400px;"></div>
+					<script src="files/js/diagonalGraphManager.js"></script>
+					
+					<p>Aby utworzyć punkt pomiarowy należy kliknąć na wykres. Aby usunąć punkt należy kliknąć ponownie na dany punkt&nbsp;&nbsp;&nbsp;
+					<button type="submit" class="btn btn-primary" onclick="animatePointDiagonal()">Animacja</button>
+					</p>
+					
+					
+					<table class="table table-bordered">
+					  <tr>
+						<td>Zasięg rzutu:</td>
+						<td class="active" id="zasieg_diagonal">0 [m]</td>
+					  </tr>
+					  <tr>
+						<td>Czas do momentu upadku:</td>
+						<td class="active" id="t_upadku_diagonal">0 [s]</td>		
+					  </tr>
+					  <tr>
+						<td>Wysokość maksymalna:</td>
+						<td class="active" id="h_max_diagonal">0 [m]</td>		
+					  </tr>
+					</table>
+					<!-- KONIEC RZUTU UKOSNEGO -->
+				</div>
+				
+				
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">by Jakub Pokorski</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
