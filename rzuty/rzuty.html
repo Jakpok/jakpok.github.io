@@ -4,13 +4,21 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="UTF-8">
 	<title>Rzuty</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="files/css/style.css">
+	<!--
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+	<script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script> -->
+	<link rel="stylesheet" href="files/css/thirdParty/bootstrap.min.css">	
+	<link rel="stylesheet" href="files/css/thirdParty/jsxgraph.css">
+	
+	<script src="files/js/thirdParty/jquery.min.js"></script>
+	<script src="files/js/thirdParty/bootstrap.min.js"></script>
+	<script type="text/javascript" src="files/js/thirdParty/jsxgraphcore.js"></script>
+	
 	<script src="files/js/main.js"></script>
 </head>
 <body>
@@ -44,7 +52,8 @@
 					<br><hr>
 					
 					<!-- WYKRES -->
-					<div id="box" class="jxgbox" style="width:800px; height:400px;"></div>
+					<div id="box" class="jxgbox" style="width:800px; height:500px;"></div>
+					<script type="text/javascript">init(1);</script>
 					<script src="files/js/horizontalGraphManager.js"></script>
 					
 					<p>Aby utworzyć punkt pomiarowy należy kliknąć na wykres. Aby usunąć punkt należy kliknąć ponownie na dany punkt&nbsp;&nbsp;&nbsp;
@@ -93,7 +102,8 @@
 					<br><hr>
 					
 					<!-- WYKRES -->
-					<div id="box2" class="jxgbox" style="width:800px; height:400px;"></div>
+					<div id="box2" class="jxgbox" style="width:800px; height:500px;"></div>
+					<script type="text/javascript">init(2);</script>
 					<script src="files/js/diagonalGraphManager.js"></script>
 					
 					<p>Aby utworzyć punkt pomiarowy należy kliknąć na wykres. Aby usunąć punkt należy kliknąć ponownie na dany punkt&nbsp;&nbsp;&nbsp;

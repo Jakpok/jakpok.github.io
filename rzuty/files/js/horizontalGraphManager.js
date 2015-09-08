@@ -37,6 +37,7 @@ function animatePoint(){
 
 function createBoard(){
 	var b = JXG.JSXGraph.initBoard('box', {boundingbox: [-1, 10, 10, -1], axis:false, showCopyright: false,keepaspectratio:true});
+	
 	var ax1 = b.create('axis', [[0,0],[1,0]],{
 		withLabel: true,
 		name:'x[m]',

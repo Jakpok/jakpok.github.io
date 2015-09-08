@@ -1,4 +1,20 @@
 var g = 10;
+var boardwidth;
+
+function init(i){
+	
+	//boardwidth = document.getElementsByClassName("tab-pane")[0].style.width;
+	boardwidth = document.getElementsByClassName("tab-pane")[0].offsetWidth;
+	console.log("board width: " + boardwidth);
+	if(i==1){
+		document.getElementById('box').style.width = boardwidth;
+	}
+	else if(i==2){
+		document.getElementById('box2').style.width = boardwidth;
+	}
+	//document.getElementById("box").style.width = document.getElementById("tab-pane").style.width;
+	//document.getElementById("box2").style.width = document.getElementById("tab-pane").style.width;
+}
 
 function rzutPoziomy(){
 	var h = document.getElementById("pozH").value;

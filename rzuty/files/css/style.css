@@ -40,6 +40,10 @@ table{
   margin: 20px 0;
 }
 
+.btn{
+  margin-top: 20px;
+}
+
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
