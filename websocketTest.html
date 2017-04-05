@@ -41,7 +41,7 @@
 				socket.onmessage = function (evt) { 
 					var received_msg = evt.data;
 					
-					$("textarea").append("Otrzymano: "+ received_msg + "\n");
+					$("textarea").val($("textarea").val()+"Otrzymano: "+ received_msg + "\n");
 					console.log(received_msg);
 					
 				};
