@@ -40,15 +40,16 @@
 
 				socket.onmessage = function (evt) { 
 					var received_msg = evt.data;
-					console.log(received_msg);
+					
 					$("textarea").append("Otrzymano: "+ received_msg + "\n");
+					console.log(received_msg);
 					
 				};
 
 				socket.onclose = function(){ 
 					// websocket is closed.
 					alert("Connection is closed!"); 
-					$("textarea").val(" ");
+					$("textarea").val('');
 				};
 				socket.onerror = function (event) {
 					alert("Error: " + event); 
