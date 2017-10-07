@@ -1,8 +1,8 @@
  @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
 }
 
 *{
@@ -17,28 +17,28 @@
 }
 
  .content {
-  height: 100%;
-  min-height: 300px;
-  padding: 60px;
-  margin-bottom: 30px;
-  font-size: 15px;
-  font-weight: 200;
-  line-height: 30px;
-  vertical-align: middle;
-  color: inherit;
-  background-color: #eeeeee;
-  background-image: url('../img/blured.jpg');
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+	height: 100%;
+	min-height: 300px;
+	padding: 60px;
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-weight: 200;
+	line-height: 30px;
+	vertical-align: middle;
+	color: inherit;
+	background-color: #eeeeee;
+	background-image: url('../img/blured.jpg');
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	  border-radius: 6px;
 }
 
 .content h1 {
-  margin-bottom: 0;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: inherit;
+	margin-bottom: 0;
+	font-size: 40px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: inherit;
 }
 
 .projectCell{
@@ -46,7 +46,7 @@
 }
 
 .content li {
-  line-height: 30px;
+  	line-height: 30px;
 }
 .zdjecie img{
 	margin-bottom: 10px;
@@ -56,8 +56,45 @@
 	border-radius: 8px;
 }
 .bigger{
-  font-size: 20px;
-  line-height: 3;
-  letter-spacing: -1px;
-  color: inherit;
+	font-size: 20px;
+	line-height: 3;
+	letter-spacing: -1px;
+	color: inherit;
 }
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-instagram {
+	background: #125688;
+  	color: white;
+}
+
+.fa-linkedin {
+  	background: #007bb5;
+  	color: white;
+}
+.fa-github {
+  	background: #181717;
+  	color: white;
+}
+.fa-spotify {
+  	background: #1ED760;
+  	color: white;
+}
+.fa-lastfm {
+  	background: #D51007;
+  	color: white;
+}
+.fa-steam {
+  	background: #000000;
+  	color: white;
+}
+
