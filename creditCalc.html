@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!-- KALKULATOR KREDYTOWY BY JAKUB POKORSKI. TECHNOLOGIE: HTML, BOOTSTRAP, JAVASCRIPT-->
+<!-- DOSTEPNY POD ADRESEM jakpok.com/creditCalc -->
+<html>
+
+	<!-- HEAD I CSS -->
+	<head>
+		<title>Kalkulator</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+		<style>
+			body{
+				padding: 15px;
+			}
+			.card-block{
+				padding: 20px;
+			}
+			.card{
+				max-width:650px;
+			}
+			.input-group{
+				height:40px;
+			}
+			.input-group-addon{
+				width: 100px;
+				padding-right:20px;
+			}
+			input{
+				width:150px;
+			}
+		</style>
+	</head>
+	<!-- LAYOUT -->
+	<body>
+		<div class="card">
+			<div class="card-header">
+				<h4>Kalkulator kredytowy</h4>
+			</div>
+			<div class="card-block">
+
+				<div class="row">
+					<div class="col-4"><p>Wysokość pożyczki:</p></div>
+					<div class="col-8 input-group">
+						<input type="number" id="amount" value=0>
+						<div class="input-group-addon">PLN</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4"><p>Oprocentowanie roczne:</p></div>
+					<div class="col-8 input-group">
+						<input type="number" id="interest" value=0>
+						<div class="input-group-addon">%</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4"><p>Okres pożyczki:</p></div>
+					<div class="col-8 input-group">
+						<input type="number" id="period" value=0>
+						<div class="input-group-addon">
+							<select id="periodType">
+							  <option value="y">lat</option>
+							  <option value="m">miesięcy</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<br/>
+				<a href="#" class="btn btn-primary btn-lg" role="button" onclick="count()">Oblicz</a>
+				<hr/>
+				<p id="info1"></p>
+				<p id="info2"></p>
+			</div>
+		</div>
+		<!-- JAVASCRIPT -->
+		<script>
+		function count(){
+			var amount = document.getElementById("amount").value;
+			var period = document.getElementById("period").value;
+			var interest = document.getElementById("interest").value;
+
+			if(isNumber(amount) && isNumber(period) && isNumber(interest)){
+				if(document.getElementById("periodType").value == "y"){
+					period *= 12;
+				}
+				var q = 1 + (1/12) * (interest/100.0);
+				var unit = (amount * Math.pow(q,period) * (q-1))/(Math.pow(q,period)-1);
+				unit = unit.toFixed(2);
+				var toPay = (unit * period).toFixed(2);
+				document.getElementById("info1").innerHTML = "Do spłaty: <b>"+ toPay + " zł</b>";
+				document.getElementById("info2").innerHTML = "Wysokość miesięcznej raty: <b>"+ unit + " zł</b>";
+			}
+			else{
+				alert("Podano niewłaściwe wartości");
+			}
+		}
+
+		function isNumber(n) {
+  		return !isNaN(parseFloat(n)) && isFinite(n) && parseFloat(n)>0;
+		}
+		</script>
+	</body>
+</html>
