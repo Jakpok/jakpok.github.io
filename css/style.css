@@ -63,15 +63,18 @@
 }
 .fa {
 	margin-left:10px;
-	padding: 12px;
+	padding: 10px;
 	font-size: 30px;
 	width: 40px;
-	height: 40px;
 	text-align: center;
 	text-decoration: none;
 	border-radius:3px;
 }
 .fa:hover {
+	text-decoration:none;
+    color:white;
+}
+.fa:active {
 	text-decoration:none;
     color:white;
 }
