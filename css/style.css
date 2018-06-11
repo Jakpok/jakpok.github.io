@@ -10,12 +10,17 @@
 
 @keyframes logoAnimation{
 	0%{
+		margin-top:-200px;
+		width:2px;
+	}
+	25%{
+		margin-top:8px;
 		width: 2px;
 	}
-	20%{
+	35%{
 		width:330px;
 	}
-	30%{
+	45%{
 		width:330px;
 	}
 	100%{
@@ -24,8 +29,8 @@
 }
 
 .logoLine{
-	animation: logoAnimation 1s ease 1;
-	animation-delay:0.5s;
+	animation: logoAnimation 2.4s ease 1;
+	animation-delay:0.1s;
 	z-index: 1000;
 	width:2px;
 	height:65px;
@@ -52,7 +57,7 @@
   font-weight:100;
 	line-height: 72px;
 	animation: fadeIn 0.1s ease-in 1 forwards;
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 	margin-left:20px;
 	opacity:0
 }
