@@ -48,7 +48,7 @@
 }
 
 .projectCell{
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .content li {
@@ -70,7 +70,6 @@
 .fa {
 	margin-left:10px;
   margin-top: 2px;
-	padding: 10px;
 	font-size: 25px;
 	width: 50px;
   height: 50px;
