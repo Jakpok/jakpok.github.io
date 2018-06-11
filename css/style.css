@@ -32,15 +32,11 @@
 	min-height: 300px;
 	padding: 60px;
 	margin-bottom: 30px;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 200;
 	line-height: 30px;
 	vertical-align: middle;
 	color: inherit;
-	background-image: url('../img/blured.jpg');
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	  border-radius: 6px;
 }
 
 .content h1 {
@@ -75,7 +71,8 @@
 	margin-left:10px;
 	padding: 10px;
 	font-size: 30px;
-	width: 40px;
+	width: 50px;
+  height: 50px;
 	text-align: center;
 	text-decoration: none;
 	border-radius:3px;

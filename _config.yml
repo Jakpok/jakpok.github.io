@@ -1,4 +1,4 @@
 name: Jakpok
 markdown: redcarpet
-pygments: true
+pygments: false
 permalink: /:title.html
