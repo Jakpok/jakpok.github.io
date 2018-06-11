@@ -1,22 +1,33 @@
- @font-face {
-	font-family: 'Lato';
-	font-style: normal;
-	font-weight: 300;
-	src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+*{
+	font-family: "Source Sans Pro", Verdana, sans-serif;
 }
 
-*{
-	font-family: Lato, Verdana, sans-serif;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-slow{
+  opacity: 0;
+  animation: fadeIn 1s ease-in 1 forwards;
+  animation-delay: 0.8s;
+}
+
+.fade-in-fast{
+  opacity: 0;
+  animation: fadeIn 1.5s ease 1 forwards;
+  animation-delay: 0.2s;
 }
 
 .headerTitle{
+  margin-top:30px;
 	font-size: 62px;
-	font-weight: 800;
+  font-weight:100;
 	line-height: 72px;
-	text-transform: uppercase;
 }
 
- .content {
+.content {
 	height: 100%;
 	min-height: 300px;
 	padding: 60px;
@@ -26,7 +37,6 @@
 	line-height: 30px;
 	vertical-align: middle;
 	color: inherit;
-	background-color: #eeeeee;
 	background-image: url('../img/blured.jpg');
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -104,4 +114,3 @@
   	background: #333333;
   	color: white;
 }
-
