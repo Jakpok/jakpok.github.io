@@ -8,31 +8,32 @@
   }
 }
 
+@keyframes titleSlide {
+  from {
+  	margin-left:-400px;
+		opacity:0;
+  }
+	to{
+		margin-left: 20px;
+		opacity:1;
+	}
+}
+
 @keyframes logoAnimation{
 	0%{
 		margin-top:-200px;
-		width:2px;
-	}
-	25%{
-		margin-top:8px;
-		width: 2px;
-	}
-	35%{
-		width:330px;
-	}
-	45%{
-		width:330px;
 	}
 	100%{
-		width: 2px;
+		margin-top:8px;
 	}
 }
 
 .logoLine{
-	animation: logoAnimation 2.4s ease 1;
+	animation: logoAnimation 0.5s ease-in-out 1;
 	animation-delay:0.1s;
 	z-index: 1000;
-	width:2px;
+	width:100px;
+	margin-left:-100px;
 	height:65px;
 	background-color:#16a085;
 	position:absolute;
@@ -56,8 +57,8 @@
 	font-size: 62px;
   font-weight:100;
 	line-height: 72px;
-	animation: fadeIn 0.1s ease-in 1 forwards;
-  animation-delay: 1s;
+	animation: titleSlide 0.2s ease-out 1 forwards;
+  animation-delay: 0.5s;
 	margin-left:20px;
 	opacity:0
 }
@@ -112,6 +113,7 @@
 	text-align: center;
 	text-decoration: none;
 	border-radius:3px;
+	opacity: 0;
 }
 .fa:hover {
 	text-decoration:none;
@@ -125,19 +127,27 @@
 .fa-instagram {
 	background: #2e5e86;
   	color: white;
+		animation: fadeIn 0.5s ease 1 forwards;
+	  animation-delay: 0.8s;
 }
 
 .fa-linkedin {
   	background: #0082ca;
   	color: white;
+		animation: fadeIn 0.5s ease 1 forwards;
+	  animation-delay: 0.4s;
 }
 .fa-github {
   	background: #333333;
   	color: white;
+		animation: fadeIn 0.5s ease 1 forwards;
+	  animation-delay: 1.2s;
 }
 .fa-spotify {
   	background: #56b68b;
   	color: white;
+		animation: fadeIn 0.5s ease 1 forwards;
+	  animation-delay: 1.6s;
 }
 .fa-lastfm {
   	background: #c61118;
