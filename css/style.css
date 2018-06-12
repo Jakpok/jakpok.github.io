@@ -8,21 +8,31 @@
   }
 }
 
+@keyframes titleSlide {
+  from {
+  	margin-left:-400px;
+		opacity:0;
+  }
+	to{
+		margin-left: 20px;
+		opacity:1;
+	}
+}
+
 @keyframes logoAnimation{
 	0%{
-		width:450px;
+		margin-top:-200px;
 	}
 	100%{
-		width:100px;
+		margin-top:8px;
 	}
 }
 
 .logoLine{
-	animation: logoAnimation 0.4s ease-out 1 forwards;
-	animation-delay:0.5s;
-	border-right: 5px solid #eee;
+	animation: logoAnimation 0.5s ease-in-out 1;
+	animation-delay:0.1s;
 	z-index: 1000;
-	width:450px;
+	width:100px;
 	margin-left:-100px;
 	height:65px;
 	background-color:#16a085;
@@ -47,7 +57,10 @@
 	font-size: 62px;
   font-weight:100;
 	line-height: 72px;
+	animation: titleSlide 0.2s ease-out 1 forwards;
+  animation-delay: 0.5s;
 	margin-left:20px;
+	opacity:0
 }
 
 .content {
