@@ -16,7 +16,7 @@ p{
 
 @keyframes titleSlide {
   from {
-  	margin-left:-400px;
+  	margin-left:20px;
 		opacity:0;
   }
 	to{
