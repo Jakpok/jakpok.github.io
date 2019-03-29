@@ -2,6 +2,12 @@
 	font-family: "Source Sans Pro", Verdana, sans-serif;
 }
 
+p{
+	font-size:17px;
+	letter-spacing: 0.30000001192092896px;
+	line-height:30px;
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
